@@ -2,16 +2,18 @@ package tr.mnurdag.singletonpattern;
 
 public class SingletonLazy {
 
-    public static SingletonLazy instance;
+    private static SingletonLazy instance;
 
     private SingletonLazy() {}
 
     public static SingletonLazy getInstance() {
         synchronized (SingletonEager.class) {
-            if(instance == null)
-                return new SingletonLazy();
-            else
+            if(instance == null) {
+                instance = new SingletonLazy();
                 return instance;
+            } else {
+                return instance;
+            }
         }
     }
 

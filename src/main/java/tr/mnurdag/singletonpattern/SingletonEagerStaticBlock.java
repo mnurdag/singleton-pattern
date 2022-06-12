@@ -2,7 +2,7 @@ package tr.mnurdag.singletonpattern;
 
 public class SingletonEagerStaticBlock {
 
-    public static SingletonEagerStaticBlock instance;
+    private static SingletonEagerStaticBlock instance;
 
     static {
         instance = new SingletonEagerStaticBlock();

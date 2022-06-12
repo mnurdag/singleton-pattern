@@ -2,7 +2,7 @@ package tr.mnurdag.singletonpattern;
 
 public class SingletonEager {
 
-    public static SingletonEager instance = new SingletonEager();
+    private static final SingletonEager instance = new SingletonEager();
 
     private SingletonEager() {}
 

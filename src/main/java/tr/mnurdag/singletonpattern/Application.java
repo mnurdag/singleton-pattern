@@ -3,6 +3,7 @@ package tr.mnurdag.singletonpattern;
 public class Application {
 
     public static void main(String[] args) {
+
         System.out.println("SingletonEager Demonstration");
         SingletonEager singletonEager1 = SingletonEager.getInstance();
         SingletonEager singletonEager2 = SingletonEager.getInstance();
@@ -19,6 +20,7 @@ public class Application {
         SingletonLazy singletonLazy1 = SingletonLazy.getInstance();
         SingletonLazy singletonLazy2 = SingletonLazy.getInstance();
         System.out.println(singletonLazy1 == singletonLazy2);
+
     }
 
 }

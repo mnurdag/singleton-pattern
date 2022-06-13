@@ -1,16 +1,16 @@
 package tr.mnurdag.singletonpattern;
 
-public class SingletonLazy {
+public class SingletonLazyThreadSafe {
 
-    private static SingletonLazy instance;
+    private static SingletonLazyThreadSafe instance;
 
-    private SingletonLazy() {}
+    private SingletonLazyThreadSafe() {}
 
-    public static SingletonLazy getInstance() {
+    public static SingletonLazyThreadSafe getInstance() {
         if(instance == null) {
             synchronized (SingletonEager.class) {
                 if (instance == null)
-                    instance = new SingletonLazy();
+                    instance = new SingletonLazyThreadSafe();
             }
         }
         return instance;

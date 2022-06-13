@@ -1,6 +1,6 @@
 # Singleton Pattern
 ## Advantages of Singleton Pattern
-###Saves memory because object is not created at each request. Only single instance is reused again and again.
+### Saves memory because object is not created at each request. Only single instance is reused again and again.
 
 
 SingletonEager class is an example for singleton pattern where instance of the class is eagerly initialized at the time
